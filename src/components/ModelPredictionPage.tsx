@@ -80,7 +80,7 @@ const ModelPredictionPage: React.FC = () => {
       setResult('Accelerated Idioventricular Rhythm (AIVR)');
     } else if (JSON.stringify(answers) === JSON.stringify([3, 3, 3, 1, 3, 2, 1, 1, 20, 1])) {
       setResult('Ventricular Tachycardia (VT)');
-    } else if (JSON.stringify(answers) === JSON.stringify([9, 3, 3, 1, 3, 2, 4, 1, 19, 1])) {
+    } else if (JSON.stringify(answers) === JSON.stringify([10, 3, 3, 6, 3, 2, 1, 9, 21, 1])) {
       setResult('Ventricular Fibrillation (VFib)');
     } else if (JSON.stringify(answers) === JSON.stringify([4, 3, 9, 1, 4, 4, 3, 1, 11, 2])) {
       setResult('Paced Ventricular Rhythm');
@@ -101,7 +101,7 @@ const ModelPredictionPage: React.FC = () => {
         <h2 className="text-3xl sm:text-4xl font-bold mb-2 text-purple-600">Heart Rhythm Prediction</h2>
         <Brain size={64} className="text-purple-500 mb-4 mx-auto" />
         <p className="text-lg text-purple-700 max-w-2xl mx-auto">
-          Answer the following questions about the ECG parameters to predict the heart rhythm.
+          Answer the following questions about the ECG parameters to predict the heart disease.
         </p>
       </motion.div>
 
