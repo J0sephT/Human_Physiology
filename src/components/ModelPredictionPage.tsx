@@ -34,10 +34,61 @@ const ModelPredictionPage: React.FC = () => {
       setResult('Regular Sinus Rhythm');
     } else if (JSON.stringify(answers) === JSON.stringify([2, 1, 1, 1, 1, 2, 1, 1, 2, 2])) {
       setResult('Sinus Bradycardia');
+    } else if (JSON.stringify(answers) === JSON.stringify([3, 1, 1, 1, 1, 3, 1, 1, 3, 2])) {
+      setResult('Sinus Tachycardia');
+    } else if (JSON.stringify(answers) === JSON.stringify([1, 1, 1, 2, 1, 1, 1, 2, 4, 2])) {
+      setResult('Sinus Arrhythmia');
+    } else if (JSON.stringify(answers) === JSON.stringify([4, 1, 1, 3, 1, 1, 1, 3, 5, 2])) {
+      setResult('Sinus Exit Block');
+    } else if (JSON.stringify(answers) === JSON.stringify([4, 1, 1, 4, 1, 1, 2, 4, 6, 2])) {
+      setResult('Sinus Arrest');
+    } else if (JSON.stringify(answers) === JSON.stringify([1, 1, 2, 2, 1, 1, 1, 5, 7, 2])) {
+      setResult('NSR with Premature Atrial Complexes');
+    } else if (JSON.stringify(answers) === JSON.stringify([5, 1, 6, 1, 2, 3, 1, 1, 8, 2])) {
+      setResult('Supraventricular Tachycardia');
+    } else if (JSON.stringify(answers) === JSON.stringify([4, 1, 3, 2, 3, 1, 1, 2, 9, 2])) {
+      setResult('Atrial Fibrillation');
+    } else if (JSON.stringify(answers) === JSON.stringify([6, 1, 4, 1, 3, 1, 1, 1, 10, 2])) {
+      setResult('Atrial Flutter');
+    } else if (JSON.stringify(answers) === JSON.stringify([4, 1, 5, 1, 4, 4, 3, 1, 11, 2])) {
+      setResult('Paced Atrial Rhythm');
+    } else if (JSON.stringify(answers) === JSON.stringify([1, 1, 1, 1, 5, 1, 1, 1, 1, 2])) {
+      setResult('NSR with First Degree AV Block');
+    } else if (JSON.stringify(answers) === JSON.stringify([4, 1, 1, 2, 6, 1, 1, 2, 12, 2])) {
+      setResult('Second Degree AV Block Type I (Wenckebach)');
+    } else if (JSON.stringify(answers) === JSON.stringify([4, 1, 1, 2, 7, 1, 1, 2, 13, 2])) {
+      setResult('Second Degree AV Block Type II');
+    } else if (JSON.stringify(answers) === JSON.stringify([4, 1, 1, 5, 7, 1, 1, 6, 14, 2])) {
+      setResult('Second Degree AV Block with 2:1 Conduction');
+    } else if (JSON.stringify(answers) === JSON.stringify([4, 2, 1, 2, 3, 2, 4, 2, 15, 1])) {
+      setResult('Third Degree AV Block');
+    } else if (JSON.stringify(answers) === JSON.stringify([4, 1, 6, 2, 2, 1, 1, 7, 16, 2])) {
+      setResult('Premature Junctional Complex (PJC)');
+    } else if (JSON.stringify(answers) === JSON.stringify([7, 1, 6, 1, 2, 1, 5, 1, 17, 2])) {
+      setResult('Junctional Rhythm');
+    } else if (JSON.stringify(answers) === JSON.stringify([1, 1, 6, 1, 2, 1, 5, 1, 1, 2])) {
+      setResult('Accelerated Junctional Rhythm');
+    } else if (JSON.stringify(answers) === JSON.stringify([3, 1, 6, 1, 2, 1, 5, 1, 8, 2])) {
+      setResult('Junctional Tachycardia');
+    } else if (JSON.stringify(answers) === JSON.stringify([1, 1, 7, 2, 8, 1, 1, 2, 22, 2])) {
+      setResult('Wandering Pacemaker');
+    } else if (JSON.stringify(answers) === JSON.stringify([1, 3, 8, 2, 1, 2, 1, 8, 23, 2])) {
+      setResult('Sinus Rhythm with Premature Ventricular Complex');
+    } else if (JSON.stringify(answers) === JSON.stringify([8, 3, 3, 1, 3, 2, 4, 1, 18, 1])) {
+      setResult('Idioventricular Rhythm (IVR)');
+    } else if (JSON.stringify(answers) === JSON.stringify([9, 3, 3, 1, 3, 2, 4, 1, 19, 1])) {
+      setResult('Accelerated Idioventricular Rhythm (AIVR)');
+    } else if (JSON.stringify(answers) === JSON.stringify([3, 3, 3, 1, 3, 2, 1, 1, 20, 1])) {
+      setResult('Ventricular Tachycardia (VT)');
+    } else if (JSON.stringify(answers) === JSON.stringify([9, 3, 3, 1, 3, 2, 4, 1, 19, 1])) {
+      setResult('Ventricular Fibrillation (VFib)');
+    } else if (JSON.stringify(answers) === JSON.stringify([4, 3, 9, 1, 4, 4, 3, 1, 11, 2])) {
+      setResult('Paced Ventricular Rhythm');
     } else {
       setResult('The parameters do not correspond to any registered heart affection');
     }
   };
+  
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-purple-100 via-purple-200 to-blue-200 text-purple-800 p-4 sm:p-8">
